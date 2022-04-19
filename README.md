@@ -15,8 +15,8 @@ $> git config --global core.pager 'less --raw-control-chars'
 **Git Config file content:**
 ```markdown
 [user]
-    email = marcosmsiega@gmail.com
-    name = marcos siega
+    email = `email`
+    name = `username`
 [core]
     editor = code --wait
 [alias]
