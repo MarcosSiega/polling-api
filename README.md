@@ -1,4 +1,4 @@
-# Bkuptool API JS
+# Polling API
 
 ## Course: NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID
 
