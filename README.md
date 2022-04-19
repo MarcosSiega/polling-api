@@ -1,7 +1,9 @@
 # Bkuptool API JS
 
 Course: NodeJs, Typescript, TDD, DDD, Clean Architecture e SOLID
+
 Instructor: Rodrigo Manginho
+
 Link: https://www.udemy.com/course/tdd-com-mango/
 
 ## Steps
