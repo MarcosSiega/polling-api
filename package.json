@@ -1,37 +1,41 @@
 {
-  "name": "polling-api",
+  "name": "bkuptool-api",
   "version": "1.0.0",
-  "description": "Polling API",
+  "description": "BackUp Tool API JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MarcosSiega/polling-api.git"
+    "test": "jest --passWithNoTests --silent --noStackTrace",
+    "test:unit": "npm test -- --watch -c jest-unit-config.js",
+    "test:verbose": "jest --passWithNoTests",
+    "test:integration": "npm test -- --watch -c jest-integration-config.js ",
+    "test:staged": "npm test --findRelatedTests",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MarcosSiega/polling-api/issues"
-  },
-  "homepage": "https://github.com/MarcosSiega/polling-api#readme",
   "devDependencies": {
-    "@types/node": "^17.0.21",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "eslint": "^7.12.1",
-    "eslint-config-standard-typescript-prettier": "^5.0.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.0.0",
-    "git-commit-msg-linter": "^4.1.1",
-    "typescript": "^4.6.2"
+    "git-commit-msg-linter": "^3.2.8",
+    "husky": "^7.0.4",
+    "jest": "^27.4.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.1",
+    "typescript": "^4.5.3"
   },
-  "eslintConfig": {
-    "extends": ["standard-typescript-prettier"],
-    "parserOptions": { "project": "./tsconfig.json" }
-  },
-  "prettier": "eslint-config-standard-typescript-prettier/prettier"
+  "lint-staged": {
+    "*.ts": [
+      "eslint 'src/**' --fix",
+      "npm run test:staged"      
+    ]
+  }
 }

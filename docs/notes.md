@@ -1,0 +1,36 @@
+# Anti-Patterns/Code Smells
+- Speculative Generality
+- God Class
+- Divergent Change
+- Blank Lines
+- Improper Instantiation
+- High Coupling
+- Test Code in Production
+- Duplicated Code
+- Shotgun Surgery 
+- Resolved mainly by applying a Factory Pattern
+- Bad Variable Naming 
+  - ex: reviewDuration: 1 -> reviewDurarionInHours: 1
+- Bad Naming   
+
+# Design-Patterns/Principles/Conventions
+- You Ain't Gonna Need It (YAGNI)
+- Single Responsability Principle (SRP) -> [S]OLID
+  - The SRP dictates that classes should have only a single reason to change. Multiple reasons for change indicate more tightly-coupled designs that are more rigid and harder to maintain.
+- Arrange, Act, Assert (AAA) -> Test principle -> Do not run any test until he has this three components
+- Red, Green, Refactor
+- Dependency Injection 
+- Dependency Inversion Principle -> (DIP) -> SOLI[D]
+- Liskov Substitution Principle -> (LSP) ->   SO[L]ID 
+  - It states that a superclass object should be replaceable with a subclass object without breaking the functionality of the software
+- Repository Pattern 
+- SOFA: OOP Principles for Better Function Design (METHODs)
+- Test Doubles -> Mock (INPUT), Stub (OUTPUT), Spy (INPUT AND OUTPUT)
+- Small Commits 
+- sut -> System Under Test
+- Liskov Principle can be associated with Strategy Pattern
+- Factory Pattern
+  - make sut example
+- Long Parameter List
+- Primitive Obsession
+- Clean Code
