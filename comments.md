@@ -1,4 +1,4 @@
 ## Current lesson:
 
-module 5. Utils layer
-1. Criando o EmailValidatorAdapter e mockando o validator
+module 6. SignUp API - Data Layer
+1. Criando o DbAddAccount e integrando com o Encrypter
