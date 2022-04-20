@@ -1,3 +1,4 @@
 ## Current lesson:
 
-5. Integrando com o AddAccount Usecase.mp4
+module 5. Utils layer
+1. Criando o EmailValidatorAdapter e mockando o validator
