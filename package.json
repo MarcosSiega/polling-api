@@ -1,7 +1,7 @@
 {
-  "name": "bkuptool-api",
+  "name": "polling-api",
   "version": "1.0.0",
-  "description": "BackUp Tool API JS",
+  "description": "Polling API",
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace",
@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/jest": "^27.0.3",
     "@types/node": "^16.11.12",
     "@types/validator": "^13.7.2",
@@ -40,6 +41,7 @@
     ]
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "validator": "^13.7.0"
   }
 }
