@@ -1,5 +1,6 @@
+import { AddAccountModel } from 'crosscutting/models/add-account-model'
 import { AddAccountRepository } from 'data/protocols/add-account-repository'
-import { Encrypter, AccountModel, AddAccount, AddAccountModel } from './db-add-account-protocols'
+import { Encrypter, AccountModel, AddAccount } from './db-add-account-protocols'
 
 export class DbAddAccount implements AddAccount {
   private readonly encrypter: Encrypter

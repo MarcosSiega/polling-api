@@ -1,11 +1,5 @@
-import { AccountModel } from '../models/accont-model'
-
-export interface AddAccountModel{
-  name: string
-  email: string
-  password: string
-}
-
+import { AddAccountModel } from 'crosscutting/models/add-account-model'
+import { AccountModel } from 'crosscutting/models/account-model'
 export interface AddAccount {
   add: (account: AddAccountModel) => Promise<AccountModel>
 }

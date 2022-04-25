@@ -1,5 +1,5 @@
-import { AccountModel } from 'domain/models/accont-model'
-import { AddAccountModel } from 'domain/usecases/add-account'
+import { AccountModel } from 'crosscutting/models/account-model'
+import { AddAccountModel } from 'crosscutting/models/add-account-model'
 
 export interface AddAccountRepository {
   add: (account: AddAccountModel) => Promise<AccountModel>

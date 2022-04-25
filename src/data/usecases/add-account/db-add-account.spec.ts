@@ -1,6 +1,7 @@
-import { AccountModel, AddAccountModel, Encrypter } from './db-add-account-protocols'
+import { AccountModel, Encrypter } from './db-add-account-protocols'
 import { DbAddAccount } from './db-add-account'
 import { AddAccountRepository } from 'data/protocols/add-account-repository'
+import { AddAccountModel } from 'crosscutting/models/add-account-model'
 
 describe('DbAddAccount UseCase', () => {
   interface SutTypes {
